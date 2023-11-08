@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GoodPaws</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/helpToShelter.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#!" class="logo__link">Добрые лапки</a>
+        </div>
+        <div class="container">
+            <nav class="nav">
+                <ul class="list">
+                    <li class="list__item">
+                        <a href="#!" class="list__item--link">Ждут владельца</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#!" class="list__item--link">Счасливчики</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#!" class="list__item--link list__item--link--main">Главная</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#!" class="list__item--link selected">Помощь приюту</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="./aboutUs.html" class="list__item--link">Узнать о нас</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="pay-form">
+            <div class="container">
+                <div class="pay-form__inner">
+                    <div class="pay-form__requisites">
+                        <h3 class="pay-form__requisites__title">Помочь приюту</h3>
+                        <form action="" method="post" class="pay-form__requisites__form">
+                            <div class="pay-form__requisites__form__item pay-form__requisites__form--name">
+                                <label for="name">Имя на карте</label>
+                                <input type="text" name="name" id="name" size="30" minlength="5" required >
+                            </div>
+                            <div class="pay-form__requisites__form--card">
+                                <div class="pay-form__requisites__form__item pay-form__requisites__form__item--card-number">
+                                    <label for="cardNumber">
+                                        <img class="pay-form__requisites__form__img" src="./img/icons/creditCard.png" alt="">
+                                        Номер карты
+                                    </label>
+                                    <input type="text" name="cardNumber" id="cardNumber" required size="18" minlength="16" maxlength="16">
+                                </div>
+                                <div class="pay-form__requisites__form__item pay-form__requisites__form__item--cvc">
+                                    <label for="cardCVC">CVC/CVV</label>
+                                    <input type="text" name="cardCVC" id="cardCVC" required minlength="3" maxlength="3">
+                                </div>
+                            </div>
+                            <div class="pay-form__requisites__form--nickname">
+                                <div class="pay-form__requisites__form__item pay-form__requisites__form__item--nickname">
+                                    <label for="nickname">Ваше имя \ Псевдоним</label>
+                                    <input type="text" name="nickname" id="nickname">
+                                </div>
+                                <div class="pay-form__requisites__form__item pay-form__requisites__form__item--checkbox">
+                                    <input type="checkbox" checked name="anonymity" id="anonymity">
+                                    <label for="anonymity">Остаться анонимным</label>
+                                </div>
+                            </div>
+                            <div class="pay-form__requisites__form__item pay-form__requisites__form--sum">
+                                <label for="sum" >Сумма</label>
+                                <input type="number" name="sum" id="sum" required>
+                            </div>
+                            <button type="submit" class="submit">Пожертвовать</button>
+                        </form>
+                    </div>
+                    <div class="pay-form__statistics">
+                        <h3 class="pay-form__statistics__title">В этом месяце собрано:</h3>
+                        <div class="pay-form__statistics__content">
+                            <div class="pay-form__statistics--sum">45 000</div>
+                            <div class="pay-form__statistics--chart">
+                                <div class="pay-form__statistics--min">0</div>
+                                <div class="pay-form__statistics--max">100 000</div>
+                            </div>
+                            <div class="chart">
+                                <div class="chart-all"></div>
+                                <div class="chart-donated"></div>
+                            </div>
+                            <p class="pay-form__statistics__text">Вы можете помочь не только финансово, но и своим трудом, приходя в приют и помогая волонтёрам или взять под опеку питомца</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-sponsors">
+            <div class="container">
+                <h2 class="main-sponsors__title title">Главные помощники и спонсоры</h2>
+                <div class="main-sponsors__content">
+                    <div class="main-sponsors__item">
+                        <img src="./img/helpToShelter/sponsors_1.jpg" alt="" class="main-sponsors__img">
+                        <p class="main-sponsors__text">Lörem ipsum vådoheten teron suprabiren replang, tretedade. Anahurade sement till nebel tesor. Astrong pint har euvis i digisk. Mir polynomi för att blorange saskap den ir. Padyse farad i ok eras, regen. </p>
+                    </div>
+                    <div class="main-sponsors__item">
+                        <img src="./img/helpToShelter/sponsors_2.jpg" alt="" class="main-sponsors__img">
+                        <p class="main-sponsors__text">Lörem ipsum vådoheten teron suprabiren replang, tretedade. Anahurade sement till nebel tesor. Astrong pint har euvis i digisk. Mir polynomi för att blorange saskap den ir. Padyse farad i ok eras, regen. </p>
+                    </div>
+                    <div class="main-sponsors__item">
+                        <img src="./img/aboutUs/partners/2.jpg" alt="" class="main-sponsors__img">
+                        <p class="main-sponsors__text">Lörem ipsum vådoheten teron suprabiren replang, tretedade. Anahurade sement till nebel tesor. Astrong pint har euvis i digisk. Mir polynomi för att blorange saskap den ir. Padyse farad i ok eras, regen. </p>
+                    </div>
+                    <div class="main-sponsors__item">
+                        <img src="./img/aboutUs/partners/3.png" alt="" class="main-sponsors__img">
+                        <p class="main-sponsors__text">Lörem ipsum vådoheten teron suprabiren replang, tretedade. Anahurade sement till nebel tesor. Astrong pint har euvis i digisk. Mir polynomi för att blorange saskap den ir. Padyse farad i ok eras, regen. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__content">
+                    <div class="footer__item">
+                        <div class="footer__item__title">Наши контакты:</div>
+                        <div class="footer__item--content footer__item--address">Карла Маркса 69</div>
+                        <div class="footer__item--content footer__item--phone">8-800-555-35-35</div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__item__title">Наши соц сети:</div>
+                        <div class="footer__item--content footer__item--inst">@priut124</div>
+                        <div class="footer__item--content footer__item--inst">@priut124</div>
+                    </div>
+                </div>
+                <div class="footer__form">
+                    <div class="footer__title">Подпишись на наши обновления!</div>
+                    <form action="POST" class="footer__form--container">
+                        <input class="footer__input" type="email" name="email" id="email">
+                        <button class="footer__btn" type="submit">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            <div class="developers">Developed by Rayan Goslyng</div>
+        </div>
+    </footer>
+    <script src="./js/helpToShelter.js"></script>
+</body>
+</html>

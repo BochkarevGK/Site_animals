@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:написать="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>GoodPaws</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/aboutUs.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#!" class="logo__link">Добрые лапки</a>
+        </div>
+        <div class="container">
+            <nav class="nav">
+                <ul class="list">
+                    <li class="list__item">
+                        <a href="#!" class="list__item--link">Ждут владельца</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#!" class="list__item--link">Счасливчики</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="./index.html" class="list__item--link list__item--link--main">Главная</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#!" class="list__item--link">Помощь приюту</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#!" class="list__item--link selected">Узнать о нас</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="services">
+            <div class="container">
+                <div class="services__inner">
+                    <div class="services__photo">
+                        <img src="./img/aboutUs/services/dog.jpg" alt="" class="services__photo--img">
+                    </div>
+                    <div class="services__content">
+                        <h1 class="services__title">Чем мы занимаемся</h1>
+                        <ul class="services__list">
+                            <li class="services__item">
+                                <p class="services__item--text">Временный кров</p>
+                                <img src="./img/aboutUs/services/1.png" alt="" class="services__item--img">
+                            </li>
+                            <li class="services__item">
+                                <p class="services__item--text">Медецинская помощь</p>
+                                <img src="./img/aboutUs/services/2.png" alt="" class="services__item--img">
+                            </li>
+                            <li class="services__item">
+                                <p class="services__item--text">Услуги грумера</p>
+                                <img src="./img/aboutUs/services/3.png" alt="" class="services__item--img">
+                            </li>
+                            <li class="services__item">
+                                <p class="services__item--text">Поиск хозяина</p>
+                                <img src="./img/aboutUs/services/4.png" alt="" class="services__item--img">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <h2 class="about__title title">О проекте</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about__text--paragraph">«Добрые лапки» – это уникальный проект, который помогает людям и питомцам из приютов встретиться и стать друзьями на всю жизнь.</p>
+                        <p class="about__text--paragraph">Приют построен в 2018 году некомерческой организацией “Добрые лапки”. </p>
+                        <p class="about__text--paragraph">Наш главный отдел находится в городе Новосибирске по адресу пл. Карла Маркса 69</p>
+                    </div>
+                    <div class="about__img">
+                        <img src="./img/aboutUs/about.jpg" alt="" class="about__img--img">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="map">
+            <div class="container">
+                <h2 class="map__title title">Мы всегда готовы помочь безвозмездно</h2>
+                <div class="map__content">
+                    <iframe class="map__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A2783c03e594e8f8b3cb78d1abe56dafbd5f8c07c000615d9b2224217696f68c5&amp;source=constructor"  frameborder="0"></iframe>
+                    <div class="map__contacts">
+                        <p class="map__contacts__text">
+                            Вы всегда можете нам позвонить или написать:<br>
+                            Тел: 8 800 555-35-35<br>
+                            Mail: dobrielapki@mail.ru
+                        </p>
+                        <p class="map__contacts__text">Часы работы: 8:00 - 23:00 без выходных</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <h2 class="partners__title title">Партнеры проекта</h2>
+            <div class="partners__content">
+                <img src="./img/aboutUs/partners/1.jpg" alt="" class="partners__partner">
+                <img src="./img/aboutUs/partners/2.jpg" alt="" class="partners__partner">
+                <img src="./img/aboutUs/partners/3.jpg" alt="" class="partners__partner">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__content">
+                    <div class="footer__item">
+                        <div class="footer__item__title">Наши контакты:</div>
+                        <div class="footer__item--content footer__item--address">Карла Маркса 69</div>
+                        <div class="footer__item--content footer__item--phone">8-800-555-35-35</div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__item__title">Наши соц сети:</div>
+                        <div class="footer__item--content footer__item--inst">@priut124</div>
+                        <div class="footer__item--content footer__item--inst">@priut124</div>
+                    </div>
+                </div>
+                <div class="footer__form">
+                    <div class="footer__title">Подпишись на наши обновления!</div>
+                    <form action="POST" class="footer__form--container">
+                        <input class="footer__input" type="email" name="email" id="email">
+                        <button class="footer__btn" type="submit">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            <div class="developers">Developed by Rayan Goslyng</div>
+        </div>
+    </footer>
+</body>
+</html>

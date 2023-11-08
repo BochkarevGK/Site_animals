@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GoodPaws</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/waitingForOwner.css">
+    <link rel="stylesheet" href="./css/adminPanel.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#!" class="logo__link">Добрые лапки</a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="control">
+            <div class="container">
+                <div class="control__inner">
+                    <div class="control__sort">
+                        <form class="control__form">
+                            <select placeholder="Страница" class="custom-select control__select" name="page" id="page-select">
+                                <option class="selection" value="">Все</option>
+                                <option value="main">Главная</option>
+                                <option value="helpToShelter">Помощь приюту</option>
+                                <option value="waitingForOwner">Ждут владельца</option>
+                                <option value="luckyOnes">Счастливчики</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="control__title">
+                        <h1 class="title">Управление записями</h1>
+                    </div>
+                    <div class="control__btn">
+                        <button data-modal class="btn control__btn--btn">Добавить запись</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="entries-list">
+            <div class="container">
+                <table class="entries-list__table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>фото</th>
+                            <th>имя</th>
+                            <th>описание</th>
+                            <th>история</th>
+                            <th>дата</th>
+                            <th>вес</th>
+                            <th>рост</th>
+                            <th>вид</th>
+                            <th>управление</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#!" class="link">Ссылка</a></td>
+                            <td>Муся</td>
+                            <td>
+                                <p class="truncate-text--desc">Спокойная и Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>
+                                <p class="truncate-text--history">Была сдана хозяйкой Lorem ipsum dolor sit amet.</p>
+                            </td>
+                            <td>01.02.2023</td>
+                            <td>4 кг</td>
+                            <td>25 см</td>
+                            <td>Кошка</td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="adding-entry modal none">
+                <div class="adding-entry__inner">
+                    <div class="adding-entry__header">
+                        <div class="adding-entry__title">Добавление записи</div>
+                        <div class="adding-entry__cross">
+                            <button class="cross__btn"></button>
+                        </div>
+                    </div>
+                    <div class="adding-entry__main">
+                        <form action="" method="post" class="adding-entry__form">
+                            <div class="adding-entry__item">
+                                <h3 class="adding-entry__item__title">фоТО</h3>
+                                <div class="photo">
+                                    <img src="" alt="">
+                                </div>
+                                <label for="photo"  class="adding-entry__item__btn btn">
+                                    <span>Выберите файл</span>
+                                    <input type="file" id="photo" name="photo">
+                                </label>
+                            </div>
+                            <div class="adding-entry__item adding-entry--flex">
+                                <label for="name" class="adding-entry__item__title">имя</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div class="adding-entry__item">
+                                <div class="adding-entry--flex">
+                                    <label for="date" class="adding-entry__item__title">дата</label>
+                                    <input type="date" name="date" id="date">
+                                </div>
+                                <div class="adding-entry--flex">
+                                    <label for="weight" class="adding-entry__item__title">вес</label>
+                                    <input type="number" name="weight" id="weight">
+                                </div>
+                                <div class="adding-entry--flex">
+                                    <label for="height" class="adding-entry__item__title">рост</label>
+                                    <input type="number" name="height" id="height">
+                                </div>
+                                <div class="adding-entry--flex">
+                                    <label for="kind" class="adding-entry__item__title">вид</label>
+                                    <input type="text" name="kind" id="kind">
+                                </div>
+                            </div>
+                            <div class="adding-entry__item">
+                                <label for="history" class="adding-entry__item__title">история</label>
+                                <textarea name="history" id="history" cols="5" rows="5"></textarea>
+                            </div>
+                            <div class="adding-entry__item">
+                                <label for="desc" class="adding-entry__item__title">описание</label>
+                                <textarea name="desc" id="desc" cols="5" rows="5"></textarea>
+                            </div>
+                            <div class="add__btn">
+                                <button type="submit" class="add__btn--btn btn">Добавить запись</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/waitingForOwner.js"></script>
+    <script src="./js/adminPanel.js"></script>
+</body>
+</html>
